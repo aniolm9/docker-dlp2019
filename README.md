@@ -1,2 +1,2 @@
-# dlp2019-docker
-Fitxers per la xerrada de Docker al DLP 2019.
+# docker-dlp2019
+Fitxers de la xerrada "Introducció a Docker" del DLP 2019.
