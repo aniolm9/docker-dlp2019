@@ -1,0 +1,71 @@
+% !TEX TS-program = lualatex
+\documentclass[aspectratio=149,dvipsnames,svgnames,unicode]{beamer}
+\usepackage{pgfpages}
+% \setbeameroption{show only notes}
+% \pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+
+% Tema FSD
+\usetheme{FSD}
+\setbeamercovered{invisible}
+
+% Idioma
+\usepackage{polyglossia}
+\setmainlanguage{catalan}
+\setotherlanguage{english}
+
+% URL's
+\usepackage{url}
+
+% Per poder tallar gràfics en inserir-los
+\usepackage{graphicx}
+
+\usepackage{multirow}
+\hypersetup{
+  colorlinks=true,
+}
+
+\usepackage[listings]{tcolorbox}
+\usepackage{tikz}
+
+% use our .sty file for simple movie commands
+% \usepackage{pdfpc-commands}
+% \usepackage{pdfpcnotes}
+
+% Alguns Logos més
+\usepackage{metalogo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Aparença de les diapos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Info del document
+\title{Introducció a Docker}
+\author{Aniol Marti (amarti@caliu.cat)}
+\institute[Caliu]{Caliu - Catalan Linux Users}
+\date{21 de setembre de 2019}
+
+\begin{document}
+
+% The title frame
+% Té l'opció ``plain'' per tal que les decoracions de la resta de transparències no surtin
+% L'estil està definit a la plantilla corresponent del ``inner theme''
+\begin{frame}[plain]
+   \titlepage
+\end{frame}  
+
+\section*{Index}
+\begin{frame}{Índex}
+	\tableofcontents
+\end{frame}
+
+\section{Concepte de contenidor.}
+\input{Seccions/section1.tex}
+\section{El paper de Docker.}
+\input{Seccions/section2.tex}
+\section{Volums, imatges i contenidors.}
+\input{Seccions/section3.tex}
+
+\section*{Final}
+\input{Seccions/finale.tex}
+
+\end{document}

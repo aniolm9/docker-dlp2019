@@ -1,0 +1,22 @@
+\mode<presentation>
+
+% Provision
+\ProvidesPackage{beamerthemeFSD}[2018/09/09]
+
+% Requirement
+%\RequirePackage{tikz}
+
+% Settings
+\usecolortheme{FSD}
+\usefonttheme{FSD}
+\useinnertheme{default}
+\useoutertheme{default}
+
+% Desactivem els símbols de navegació
+\setbeamertemplate{navigation symbols}{}
+
+% Instal·lem un logo
+\pgfdeclareimage[height=0.5cm]{logo}{Imatges/SFD_logo.pdf}
+\logo{\pgfuseimage{logo}}
+
+\mode<all>

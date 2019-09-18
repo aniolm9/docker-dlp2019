@@ -1,0 +1,51 @@
+\mode<presentation>
+
+%%%%%%%%%%%%%%%
+%%
+%% Fonts
+%%
+%%%%%%%%%%%%%%%
+\usepackage{fontspec}
+\defaultfontfeatures{RawFeature=+calt}
+\usefonttheme{professionalfonts}
+\usepackage{microtype}
+
+%%% Descomentem això si volem usar una font amb extensió matemàtica, com ara STIX, XITS, Asana...
+\usepackage[bold-style=upright]{unicode-math}
+\setmainfont[Contextuals=WordFinal,Ligatures={Historic,Rare,Required,Common}]{Libertinus Serif}
+\setsansfont{Libertinus Sans}
+\setmonofont{DejaVu Sans Mono}
+\setmathfont{Libertinus Math}
+\newfontfamily\simbols{OpenSymbol}
+% Defineixo uns símbols per usar-los com a macro
+\newcommand{\si}{\simbols\addfontfeature{Color=ForestGreen}\symbol{"E20A}}
+\newcommand{\no}{\simbols\addfontfeature{Color=BrickRed}\symbol{"E20C}}
+
+%%% Descomentem això si volem usar una font NO MATEMÀTICA per la matemàtica
+%%% Útil per homogeneïtzar estil, i potser en transparències la precisió 100% no és tan crítica...
+% \usepackage{mathspec}
+% \makeatletter % undo the wrong changes made by mathspec
+% \let\RequirePackage\original@RequirePackage
+% \let\usepackage\RequirePackage
+% \makeatother
+% \setsansfont{Libertinus Sans}
+% \setmathfont(Latin,Digits){Libertinus Sans}
+% \setmathfont(Greek){Asana Math}
+
+% Correcció de fonts SI NO S'USA UNA FONT MATEMÀTICA:
+% \newcommand*{\xhat}{\skew{3}{\hat}{x}}
+% \newcommand*{\xbar}{\skew{3}{\bar}{x}}
+% \newcommand*{\ybar}{\skew{3}{\bar}{y}}
+% \newcommand*{\zbar}{\skew{3}{\bar}{z}}
+% \newcommand*{\xvec}{\skew{5}{\overrightarrow}{x}}
+% \newcommand*{\vvec}{\skew{5}{\overrightarrow}{v}}
+% \newcommand*{\avec}{\skew{5}{\overrightarrow}{a}}
+%% Descomentar això si usem una font matemàtica
+
+\setbeamerfont{anagram}{size=\Large}
+\setbeamerfont{title}{size=\LARGE}
+\setbeamerfont{author}{size=\small}
+\setbeamerfont{date}{size=\small}
+\setbeamerfont{framesubtitle}{size=\small,shape=\scshape}
+
+\mode<all>
