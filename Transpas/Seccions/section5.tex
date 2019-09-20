@@ -1,0 +1,30 @@
+\begin{frame}[containsverbatim]
+  \frametitle{Ordres bàsiques}
+  \tiny
+  \begin{lstlisting}
+  # Crear una imatge
+  docker build --tag=<nom_imatge> .
+  
+  # Veure les imatges
+  docker image ls
+  
+  # Aixecar un contenidor
+  docker run -it -v <dir_host>:<dir_container> <nom_imatge>
+  
+  # Veure els contenidors en marxa
+  docker ps
+  
+  # Aturar un contenidor
+  docker stop <container_id>
+  
+  # Iniciar un contenidor
+  docker start <container_id>
+  
+  # Eliminar els contenidors aturats
+  docker container prune
+  
+  # Eliminar una imatge
+  docker image rm <id_imatge>
+  
+  \end{lstlisting}
+\end{frame}
