@@ -1,5 +1,5 @@
 # Imatge base
-FROM golang:buster
+FROM golang:1.12.10-buster
 
 # Variables d'entorn
 ENV GOPATH=$GOPATH:/usr/share/gocode
